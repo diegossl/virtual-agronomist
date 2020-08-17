@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detector de Pragas</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div>
+            <figure class="image is-128x128 is-icon">
+              <img src="images/sherlock-holmes.svg">
+            </figure>
+          </div>
+          <br>
+          <div class="has-text-centered">
+            <h1 class="title">Detector de Pragas</h1>
+            <p class="subtitle">Faça upload das imagens no formato zip</p>
+          </div>
+          <br>
+          <div class="file is-large is-boxed is-centered">
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+              <label class="file-label">
+                <input class="file-input" type="file" name="images">
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                  </span>
+                  <span class="file-label">
+                    Escolha as imagens...
+                  </span>
+                </span>
+              </label>
+              <br>
+              <button type="submit" class="button is-dark">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </body>
 </html>
