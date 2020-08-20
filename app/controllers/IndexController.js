@@ -8,7 +8,6 @@ module.exports = {
   async classifyImage (request, response) {
     try {
       const file = request.file
-      console.log(file)
       if (file) {
         const { result } = await visualRecognitionService.classify(file.path)
         const classifyType = result.images[0].classifiers[0].classes[0].class
