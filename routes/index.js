@@ -7,7 +7,7 @@ const Upload = Multer(MulterConfig)
 const router = express.Router()
 
 router.get('/', IndexController.index)
-router.post('/classificar',
+router.post('/classify',
   Upload.single('images'),
   IndexController.classifyImage
 )
