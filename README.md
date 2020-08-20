@@ -7,7 +7,7 @@ A virtual agronomist to identify pests in soybean plantations using IBM's image 
 To execute the project, it will be necessary to install the dependencies by typing the following command in the terminal:
 
 ```bash
-yarn install or npm npm install
+yarn install or npm install
 ```
 
 Then create a file called **.env** and copy the contents of the file **.env.exemple** to it, which already exists at the root of the project. After that, fill in the fields with your credentials.
