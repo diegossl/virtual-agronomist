@@ -1,8 +1,12 @@
-const express = require('express');
+const express = require('express')
 const IndexController = require('../app/controllers/IndexController')
-const router = express.Router();
+const MulterConfig = require('../config/multer')
+const Multer = require('multer')
 
-router.get('/', IndexController.index);
-router.post('/upload', IndexController.sendFile);
+const Upload = Multer(MulterConfig)
+const router = express.Router()
 
-module.exports = router;
+router.get('/', IndexController.index)
+router.post('/upload', Upload.single('images'), IndexController.sendFile)
+
+module.exports = router

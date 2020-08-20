@@ -1,4 +1,3 @@
-const { render } = require("ejs")
 
 module.exports = {
   index (request, response) {
