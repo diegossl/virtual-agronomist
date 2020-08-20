@@ -24,11 +24,9 @@ To execute the project, type the following command in the terminal:
 yarn start or npm start
 ```
 
-The system is now ready to be used via the routes:
+The system is now ready to be used via the route:
 
-POST [http://localhost:3000/classify](http://localhost:3000/classify)
-
-Just send a request for these routes with a JSON containing the artist's name.
+POST [http://localhost:3000](http://localhost:3000)
 
 ## License
 
