@@ -2,6 +2,10 @@
 
 A virtual agronomist to identify pests in soybean plantations using IBM's image recognition service.
 
+## Print Screen
+
+![print screen](https://github.com/diegossl/Virtual-Agronomist/blob/master/doc/img1.png)
+
 ## Setup
 
 To execute the project, it will be necessary to install the dependencies by typing the following command in the terminal:
